@@ -1,4 +1,4 @@
-import { Logo } from "../components";
+import { Logo } from "../../components";
 import style from "./Play.module.css";
 
 export default function Play() {

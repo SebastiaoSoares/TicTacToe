@@ -21,7 +21,7 @@
     --bg-7: #0b1b0e;
     --bg-8: #09130b;
 
-    --text-color-default: var(--text-color-dark);
+    --text-color-default: var(--text-color-light);
     --text-color-dark: #1a1a1a;
     --text-color-light: #f1f1f1;
 }
@@ -29,10 +29,6 @@
 *, html, body {
     margin: 0;
     padding: 0;
-}
-
-a {
-    text-decoration: none;
 }
 
 body {
@@ -43,4 +39,16 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }

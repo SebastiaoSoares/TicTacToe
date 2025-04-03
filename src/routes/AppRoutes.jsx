@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Home, Play } from "../pages";
+import { Home, Play, NotFound } from "../pages";
 import Layout from "../layout/Layout";
 
 export default function AppRoutes() {
@@ -9,6 +9,7 @@ export default function AppRoutes() {
         <Route index element={<Home />} />
         <Route path="/play" element={<Play />} />
         <Route path="/mode" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );
