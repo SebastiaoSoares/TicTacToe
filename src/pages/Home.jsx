@@ -1,11 +1,10 @@
 import style from "./Home.module.css"
-import { Logo, Background } from "../components"
+import { Logo } from "../components"
 import Button from "../components/Button/Button"
 
 export default function Home() {
   return (
     <>
-      <Background />
       <main className={style.main}>
         <Logo size={150} />
         <h1 className={style.mainTitle}>TicTacToe</h1>
