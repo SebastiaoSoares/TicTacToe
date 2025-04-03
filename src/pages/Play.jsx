@@ -1,5 +1,5 @@
 import { Logo } from "../components";
-import style from "./Play.module.css"
+import style from "./Play.module.css";
 
 export default function Play() {
   return (

@@ -2,6 +2,7 @@
 
 :root {
     font-family: Poppins, Arial, Helvetica, sans-serif;
+    color: var(--text-color-default);
 
     --primary-color: #10B981;
     --primary-dark: #006342;
@@ -38,7 +39,6 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: var(--bg-default);
-    color: var(--text-color-default);
     display: flex;
     flex-direction: column;
     align-items: center;
