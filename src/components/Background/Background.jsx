@@ -1,10 +1,20 @@
-import "./Background.scss";
+import style from "./Background.module.scss";
 
 export default function Background() {
   return (
     <>
-      <div className="background-contain">
-        <div className="background">
+      <div className={style.backgroundContain}>
+        <div className={style.background}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
           <span></span>
           <span></span>
           <span></span>
