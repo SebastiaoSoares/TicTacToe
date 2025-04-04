@@ -1,11 +1,11 @@
 .btn {
     font-weight: 600;
-    padding: 10px;
     border-radius: 5px;
-    width: 100%;
     text-align: center;
     box-shadow: 0 0 10px -5px #000;
 }
+
+/* Variant */
 
 .primary {
     background-color: #FFF;
@@ -15,4 +15,31 @@
 .secondary {
     border: solid 1px #FFF;
     color: #FFF;
+}
+
+/* Occupy */
+
+.fill {
+    width: 100%;
+}
+
+.fit {
+    width: fit-content;
+}
+
+/* Size */
+
+.large {
+    padding: 10px;
+    font-size: large;
+}
+
+.medium {
+    padding: 5px 10px;
+    font-size: medium;
+}
+
+.small {
+    padding: 3px;
+    font-size: small;
 }

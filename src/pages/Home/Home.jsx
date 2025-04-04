@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <main>
-        <Logo size={150} />
+        <Logo size={100} />
         <h1 className={style.mainTitle}>TicTacToe</h1>
         <Button to="/play">Jogar</Button>
       </main>
