@@ -23,7 +23,7 @@ function Button({
 }
 
 Button.PropTypes = {
-  variant: PropTypes.oneOf(["primary", "secondary"]),
+  variant: PropTypes.oneOf(['primary', 'secondary']),
   size: PropTypes.oneOf(['large', 'medium', 'small']),
   occupy: PropTypes.oneOf(['fill', 'fix', 'fit'])
 };

@@ -54,6 +54,7 @@ a {
 }
 
 main {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,7 +65,13 @@ main {
   border-radius: 10px;
   box-shadow: 0 0 10px -5px black;
   border: solid 1px rgba(255, 255, 255, 0.5);
-  max-width: 95vw;
+  max-width: 90vw;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  max-width: 80vw;
+  line-height: 100%;
+  text-align: center;
 }
 
 h1 {
@@ -84,6 +91,13 @@ p {
 }
 
 @media screen and (max-width: 699px) {
+
+  main {
+    width: 70vw;
+    padding: 10vw;
+    gap: 30px;
+  }
+
   h1 {
     font-size: clamp(2rem, 20vw, 3rem);
   }
