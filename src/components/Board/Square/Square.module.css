@@ -1,0 +1,18 @@
+.default {
+  width: 100px;
+  height: 100px;
+  background-color: var(--bg-8);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  border: solid 1px var(--secondary-color);
+  border-radius: 10px;
+}
+
+.ex {
+  background-image: url("../../../assets/icon-ex.png");
+}
+
+.oh {
+  background-image: url("../../../assets/icon-oh.png");
+}
