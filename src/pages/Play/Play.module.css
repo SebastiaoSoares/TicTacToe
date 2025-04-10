@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header h1 {
+  font-size: 2.5em;
+}
+
+.playersBox {
+  display:inline-flex;
+  gap: 5px;
+  min-width: 100%;
+  width: 100%;
+}
+
+.player {
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  font-size: 12px;
+  filter: saturate(0);
+  opacity: 50%;
+}
+
+.player img {
+    width: 30px;
+}
+
+.ex {
+  border: solid 2px var(--primary-color);
+}
+
+.oh {
+  border: solid 2px var(--secondary-color);
+}
+
+.active {
+  filter: saturate(1);
+  opacity: 100%;
+}

@@ -1,0 +1,53 @@
+.btn {
+    font-weight: 600;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px -5px #000;
+    transition: all 250ms;
+}
+
+.btn:hover {
+    transform: scaleY(110%);
+    background-color: var(--secondary-color);
+    border: none;
+    color: #FFF;
+}
+
+/* Variant */
+
+.primary {
+    background-color: #FFF;
+    color: #000;
+}
+
+.secondary {
+    border: solid 1px #FFF;
+    color: #FFF;
+}
+
+/* Occupy */
+
+.fill {
+    width: 100%;
+}
+
+.fit {
+    width: fit-content;
+}
+
+/* Size */
+
+.large {
+    padding: 10px;
+    font-size: large;
+}
+
+.medium {
+    padding: 5px;
+    font-size: medium;
+}
+
+.small {
+    padding: 3px;
+    font-size: small;
+}

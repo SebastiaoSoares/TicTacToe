@@ -1,0 +1,12 @@
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  min-width: 200px;
+  min-height: 200px;
+  max-width: 80vw;
+  max-height: 80vw;
+  height: 280px;
+  width: 280px;
+  margin: 0 auto;
+}

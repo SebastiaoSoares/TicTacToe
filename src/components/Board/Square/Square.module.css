@@ -1,0 +1,19 @@
+.default {
+  min-width: 32%;
+  width: 32%;
+  height: 32%;
+  background-color: transparent;
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  border: solid 1px var(--secondary-dark);
+  border-radius: 10px;
+}
+
+.ex {
+  background-image: url("../../../assets/icon-ex.png");
+}
+
+.oh {
+  background-image: url("../../../assets/icon-oh.png");
+}
