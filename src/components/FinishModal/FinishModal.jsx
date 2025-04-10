@@ -19,7 +19,7 @@ export default function FinishModal({ winner, player, reset, setShowModal }) {
     },
     draw: {
       message: "Deu Velha...",
-      icon: <Logo size={80} />,
+      icon: <Logo grayScale size={80} />,
     },
   };
 

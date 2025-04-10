@@ -9,6 +9,7 @@
 .btn:hover {
     transform: scaleY(110%);
     background-color: var(--secondary-color);
+    border: none;
     color: #FFF;
 }
 

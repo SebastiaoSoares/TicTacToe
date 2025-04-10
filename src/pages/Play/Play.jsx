@@ -9,24 +9,28 @@ export default function Play() {
   const [winner, setWinner] = useState(false);
 
   return (
-    <main>
-      <div className={style.header}>
-        <Logo size={60} />
-        <h1>TicTacToe</h1>
-      </div>
-      <div>
-        É a vez de...
-        <div className={style.playersBox}>
-          <Player player={player} variant="ex" />
-          <Player player={player} variant="oh" />
-        </div>
-      </div>
-      <Board
-        winner={winner}
-        setWinner={setWinner}
-        player={player}
-        setPlayer={setPlayer}
-      />
-    </main>
+    <>
+      <main>
+        <section>
+          <div className={style.header}>
+            <Logo size={60} />
+            <h1>TicTacToe</h1>
+          </div>
+          <div>
+            É a vez de...
+            <div className={style.playersBox}>
+              <Player player={player} variant="ex" />
+              <Player player={player} variant="oh" />
+            </div>
+          </div>
+          <Board
+            winner={winner}
+            setWinner={setWinner}
+            player={player}
+            setPlayer={setPlayer}
+          />
+        </section>
+      </main>
+    </>
   );
 }

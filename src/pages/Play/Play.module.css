@@ -26,6 +26,8 @@
   text-align: left;
   width: 100%;
   font-size: 12px;
+  filter: saturate(0);
+  opacity: 50%;
 }
 
 .player img {
@@ -33,15 +35,14 @@
 }
 
 .ex {
-  border: solid 1px var(--primary-color);
-  filter: saturate(0);
+  border: solid 2px var(--primary-color);
 }
 
 .oh {
-  border: solid 1px var(--secondary-color);
-  filter: saturate(0);
+  border: solid 2px var(--secondary-color);
 }
 
 .active {
   filter: saturate(1);
+  opacity: 100%;
 }
