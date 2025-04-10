@@ -26,6 +26,6 @@ npm install
 npm start
 ```
 
--
+---
 
 *Este projeto é uma **simulação com fins didáticos** e não tem finalidade comercial.*
