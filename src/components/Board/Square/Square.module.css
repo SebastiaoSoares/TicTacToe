@@ -1,11 +1,12 @@
 .default {
-  width: 100px;
-  height: 100px;
-  background-color: var(--bg-8);
+  min-width: 32%;
+  width: 32%;
+  height: 32%;
+  background-color: transparent;
   background-position: center;
   background-size: 80%;
   background-repeat: no-repeat;
-  border: solid 1px var(--secondary-color);
+  border: solid 1px var(--secondary-dark);
   border-radius: 10px;
 }
 
