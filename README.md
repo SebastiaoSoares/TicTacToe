@@ -20,7 +20,7 @@ Clássico jogo da velha, desenvolvido com foco em **prática de conceitos fundam
 ## Instalação
 
 ```bash
-git clone https://github.com/seu-usuario/tictactoe.git
+git clone https://github.com/SebastiaoSoares/TicTacToe.git
 cd tictactoe
 npm install
 npm start
