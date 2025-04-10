@@ -24,6 +24,7 @@ git clone https://github.com/seu-usuario/tictactoe.git
 cd tictactoe
 npm install
 npm start
+```
 
 -
 
