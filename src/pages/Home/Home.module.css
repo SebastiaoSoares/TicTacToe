@@ -1,7 +1,3 @@
 .mainTitle {
   margin-bottom: 10px;
-  background: linear-gradient(#ffffff 50%, #000000 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }

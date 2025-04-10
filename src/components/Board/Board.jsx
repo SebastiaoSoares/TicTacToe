@@ -1,27 +1,27 @@
 import { useState } from "react";
 import style from "./Board.module.css";
 import Square from "./Square/Square";
+import FinishModal from "../FinishModal/FinishModal";
 
 export default function Board({ winner, setWinner, player, setPlayer }) {
   const [board, setBoard] = useState(Array(9).fill(""));
+  const [showModal, setShowModal] = useState(false);
 
   const handleClick = (i) => {
-    if (winner) return;
+    if (board[i] || winner) return;
 
     const newBoard = [...board];
     newBoard[i] = player;
     setBoard(newBoard);
 
-    console.log(newBoard);
-
     if (checkWinner(newBoard, player)) {
-      setWinner(player);
+      setWinner(true);
+      setShowModal(true);
     } else if (checkDraw(newBoard)) {
-      // modal empate
+      setShowModal(true);
     } else {
       setPlayer(player === "ex" ? "oh" : "ex");
     }
-    return;
   };
 
   return (
@@ -33,6 +33,17 @@ export default function Board({ winner, setWinner, player, setPlayer }) {
             <Square onClick={() => handleClick(i)} value={board[i]} key={i} />
           ))}
       </div>
+      {showModal && (
+        <FinishModal
+          winner={winner}
+          player={player}
+          reset={() => {
+            setBoard(Array(9).fill(""));
+            setWinner(false);
+          }}
+          setShowModal={setShowModal}
+        />
+      )}
     </>
   );
 }
@@ -56,11 +67,5 @@ function checkWinner(board, player) {
 }
 
 function checkDraw(board) {
-  board.forEach((square) => {
-    if (square == null) {
-      return false;
-    } else {
-      return true;
-    }
-  });
+  return board.every((square) => square !== "");
 }

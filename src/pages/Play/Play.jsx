@@ -11,24 +11,22 @@ export default function Play() {
   return (
     <main>
       <div className={style.header}>
-        <Logo />
+        <Logo size={60} />
         <h1>TicTacToe</h1>
       </div>
       <div>
         É a vez de...
         <div className={style.playersBox}>
-          <Player player={player} variant={"ex"} />
-          <Player player={player} variant={"oh"} />
+          <Player player={player} variant="ex" />
+          <Player player={player} variant="oh" />
         </div>
       </div>
       <Board
-        size={150}
         winner={winner}
         setWinner={setWinner}
         player={player}
         setPlayer={setPlayer}
       />
-      {winner ? null /* Winner */ : null}
     </main>
   );
 }
