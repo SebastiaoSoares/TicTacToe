@@ -61,11 +61,16 @@ main {
   gap: 20px;
   background-color: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5px);
-  padding: 50px 40px;
+  padding: 40px;
   border-radius: 10px;
   box-shadow: 0 0 10px -5px black;
   border: solid 1px rgba(255, 255, 255, 0.5);
   max-width: 90vw;
+}
+
+App {
+  display: flex;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
